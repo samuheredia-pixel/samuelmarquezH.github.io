@@ -1,0 +1,165 @@
+* {
+    flex-wrap: wrap;
+}
+
+
+
+h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    align-content: center;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+}
+
+body{
+
+    text-align: center;
+    background: white;
+    width: 1500px;
+    float: left;
+    background: url("imagenes/asdfa-convertido-de-jpg.png") center top / 100% auto no-repeat fixed;
+    height: 2000;
+    flex-wrap: wrap;
+}
+
+.header{
+    background: #F0F8FF;
+    border: 0px solid #999999;
+    padding: 5px;
+    vertical-align: auto;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.menu {
+    background: #bdc3c7;
+    padding: 5px 15px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    list-style: none;
+    padding: 5px;
+    margin: 0 30    px;
+    font: bold 16px verdana;
+    display: inline-block;
+}
+
+.seccion3{
+    width: 700px;
+    margin: 15px auto 20px;
+    float: none;
+}
+
+.seccion3 article{
+    float: none;
+}
+
+.auth-start{
+    margin-left: auto !important;
+}
+
+.auth-button a{
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #2d3436;
+    background: #ffffff;
+    color: #2d3436;
+    text-decoration: none;
+}
+
+.auth-button.register-button a{
+    background: #2d3436;
+    color: #ffffff;
+}
+
+.seccion{
+    width: 700px;
+    margin: 20px 0;
+    height: 600;
+    float: left;
+}
+
+.seccion2{
+    width: 600px;
+    margin: 20px 0;
+    margin-left: 40px;
+    clear: left;
+    float: left;
+}
+
+article{
+    background: #F0F8FF;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    float: right;
+}
+
+time{
+    color: #999
+}
+
+article footer{
+    text-align: right;
+}
+
+.columna{
+    width: 700px;
+    position: absolute;
+    top: 685px;
+    right: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.columna blockquote{
+    border: 0px solid black;
+    padding: 40px;
+    background: #F0F8FF;
+    margin: 0;
+}
+
+.pie{
+    clear: both;
+    padding: 20px;
+    background: #2d3436;
+    color: #ffffff;
+    
+}
+
+img {
+    width: 200;
+    display: block;
+    margin: auto;
+    height: 140px;
+}
+
+video {
+    float: right;
+}
+
+.video {
+    position: absolute;
+    top: 265px;
+    right: 20px;
+}

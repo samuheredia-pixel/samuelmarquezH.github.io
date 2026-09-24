@@ -1,0 +1,164 @@
+*{
+    align-items: center;
+    align-content: center;
+}
+h1{
+    color: white;
+}
+
+.seccion{
+    text-align: center;
+    color: black;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    text-align: right;
+}
+
+.menu {
+    background: black;
+    padding: 5px 15px;
+    display: flex;
+    
+}
+
+.header {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.seccion{
+    background-image: url(imagenes/sancho.png);
+    background-size: 100%;
+    height: 300px;
+
+}
+
+.seccion h1{
+    color: black;
+}
+
+.img2{
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    padding: 12px 12px 42px;
+    background: white;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    transform: rotate(-2deg);
+}
+
+.contenedorimg{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    justify-content: center; 
+    text-align: center  ;
+}
+
+.imagenes{
+    box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+}
+
+.imagenes img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    overflow: auto;
+    display: flex
+    
+}
+
+.otraimagen{
+    box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+}
+
+.otraimagen img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    overflow: auto;
+    display: flex
+}
+
+.otraimg{
+    box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+    box
+}
+
+.otraimg img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    overflow: auto;
+    display: flex
+}
+
+.yaimg {
+    box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+}
+
+.yaimg img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    overflow: auto;
+    display: flex
+}
+
+.separador h1 {
+    color: black;
+    text-align: center;
+}
+
+th, td{
+    padding: 10px;
+}
+.compañia{
+    background-color: gray;
+}
+
+.otrotexto{
+    background-color: lightgray;
+}
+
+.contenedorsec2{
+    background-color: #EDEDED;
+}
+
+.bottonparalogin{
+    background-color: blue;
+    cursor: ;
+    padding: 14px 40px;
+    border: 2px solid #04AA6D;
+}
+
+.bottonpararegistrarse{
+
+}

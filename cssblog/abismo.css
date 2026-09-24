@@ -1,0 +1,101 @@
+*{
+    flex-wrap: wrap;
+}
+header{
+    background: #F0F8FF;
+    border: 0px solid #999999;
+    padding: 5px;
+    vertical-align: auto;
+    margin: auto;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+.header h1{
+    text-align: center;
+    background: #F0F8FF
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    align-content: center;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+.seccion3{
+    width: 700px;
+    margin: 20px auto;
+    min-height: 600px;
+    float: none;
+    box-sizing: border-box;
+    padding: 30px;
+    background: #F0F8FF;
+    border: 2px solid #2d3436;
+    margin-left: auto;
+    float: left;
+}
+
+body{
+
+    text-align: center;
+    background: url("imagenes/abismo.jpg") center top / 100% auto no-repeat fixed;
+    width: 1500px;
+    float: left;
+}
+
+.laslayers{
+    width: 420px;
+    height: auto;
+    margin: 20px 90px 20px 60px;
+    float: right;
+}
+
+.menu {
+    background: #bdc3c7;
+    padding: 5px 15px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    list-style: none;
+    padding: 5px;
+    margin: 0 30    px;
+    font: bold 16px verdana;
+    display: inline-block;
+}
+
+.auth-start{
+    margin-left: auto !important;
+}
+
+.auth-button a{
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #2d3436;
+    background: #ffffff;
+    color: #2d3436;
+    text-decoration: none;
+}
+
+.auth-button.register-button a{
+    background: #2d3436;
+    color: #ffffff;
+}
+
+.img1{
+    border: 50px solid black;
+}

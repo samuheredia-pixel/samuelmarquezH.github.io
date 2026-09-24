@@ -1,0 +1,519 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --black: #0d0d0d;
+    --yellow: #fbbd19;
+    --light: #f4f4f1;
+    --gray: #5f5f5f;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    color: var(--black);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 10px 6%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    display: block;
+    height: 115px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: var(--yellow);
+}
+
+.topbar-tools {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 10px 14px;
+    border-radius: 999px;
+    min-width: 220px;
+}
+
+.search-box span {
+    font-size: 18px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.location-pill {
+    background: var(--yellow);
+    color: var(--black);
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    background: var(--black);
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    animation: carrusel 12s infinite;
+}
+
+@keyframes carrusel {
+    0%, 28% {
+        transform: translateX(0);
+    }
+    33%, 61% {
+        transform: translateX(-100%);
+    }
+    66%, 94% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slider:hover .slider-track,
+.slider:focus-within .slider-track {
+    animation-play-state: paused;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+    opacity: .72;
+}
+
+.slide-text {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    max-width: 520px;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.slide-text p,
+.eyebrow {
+    color: var(--yellow);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.slide-text h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.05;
+    margin: 10px 0 25px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    padding: 12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.slider-buttons button {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.intro,
+.services,
+.contact,
+.about,
+.features,
+.location {
+    padding: 75px 8%;
+}
+
+.intro {
+    background: white;
+    text-align: center;
+}
+
+.intro h2,
+.services h2,
+.about h2,
+.contact h2,
+.location h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.1;
+    margin: 8px 0 15px;
+}
+
+.intro > p:last-child {
+    color: var(--gray);
+    margin: auto;
+    max-width: 600px;
+}
+
+.info-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 8% 40px;
+    background: white;
+}
+
+.info-card {
+    background: var(--black);
+    color: white;
+    padding: 28px 22px;
+    text-align: center;
+}
+
+.info-number {
+    display: block;
+    color: var(--yellow);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: rgba(255,255,255,0.8);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+    background: var(--light);
+    align-items: center;
+}
+
+.about-copy {
+    max-width: 720px;
+}
+
+.about-copy p,
+.location-text p,
+.feature-card p,
+.about-steps p,
+.service-card p,
+.contact p {
+    color: var(--gray);
+}
+
+.read-more-content {
+    display: none;
+    margin-top: 18px;
+}
+
+.read-more-content.is-open {
+    display: block;
+}
+
+.read-more-btn {
+    margin-top: 16px;
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--black);
+    padding: 10px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.read-more-btn:hover {
+    background: var(--yellow);
+}
+
+.about-steps {
+    display: grid;
+    gap: 18px;
+}
+
+.step {
+    background: white;
+    padding: 22px 20px;
+    border-left: 4px solid var(--yellow);
+}
+
+.step strong {
+    display: inline-block;
+    color: var(--yellow);
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.services {
+    background: var(--light);
+    text-align: center;
+}
+
+.lista_de_servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.service-card {
+    background: white;
+    border-top: 4px solid var(--yellow);
+    padding: 28px;
+}
+
+.service-icon {
+    color: var(--yellow);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    margin: 12px 0 8px;
+}
+
+.features {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background: var(--light);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 25px 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 30px;
+    background: var(--black);
+    color: white;
+}
+
+.location .eyebrow,
+.location p,
+.location small,
+.location strong {
+    color: white;
+}
+
+.location .read-more-btn {
+    color: white;
+    border-color: var(--yellow);
+}
+
+.map-card {
+    background: linear-gradient(180deg, rgba(251,189,25,0.2), rgba(255,255,255,0.02));
+    border: 1px solid rgba(251,189,25,0.35);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.map-pin {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.contact {
+    align-items: center;
+    background: var(--yellow);
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact .eyebrow {
+    color: var(--black);
+}
+
+.contact-data {
+    border-left: 2px solid var(--black);
+    padding-left: 30px;
+}
+
+.contact-data p {
+    color: var(--black);
+    margin: 8px 0;
+}
+
+footer {
+    background: var(--black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 8%;
+}
+
+footer p:last-child {
+    color: #aaa;
+}
+
+@media (max-width: 900px) {
+    .about,
+    .location,
+    .features,
+    .lista_de_servicios,
+    .contact,
+    .info-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .menu ul {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .topbar-tools {
+        width: 100%;
+    }
+
+    .search-box {
+        flex: 1 1 100%;
+    }
+
+    .slide img {
+        height: 360px;
+    }
+
+    .slide-text {
+        left: 8%;
+        right: 8%;
+    }
+
+    .contact-data {
+        border-left: 0;
+        border-top: 2px solid var(--black);
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Mecanica y mantenimiento para carros pesados.">
+    <title>Mecanica de Carros Pesados</title>
+</head>
+<body>
+    <header class="navbar"> <!-- Encabezado principal de la página con navegación y herramientas rápidas -->
+        <div class="logo"> <!-- Contenedor del logo de la marca -->
+            <img src="imagenes/logo.png" alt="Logo">
+        </div>
+
+        <nav class="menu"> <!-- Menú principal para moverse entre secciones -->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="topbar-tools"> <!-- Área con búsqueda y ubicación para mejorar la experiencia del usuario -->
+            <label class="search-box" aria-label="Buscar servicio"> <!-- Campo de búsqueda para localizar servicios rápidamente -->
+                <span>🔎</span>
+                <input type="search" placeholder="Buscar servicio">
+            </label>
+            <div class="location-pill">📍 Bogotá, Colombia</div> <!-- Muestra la ubicación del taller -->
+        </div>
+    </header>
+
+    <main>
+        <section class="slider" id="inicio"> <!-- Sección principal con carrusel de imágenes promocionales -->
+            <div class="slider-track"> <!-- Contenedor que mueve las imágenes en el carrusel -->
+                <div class="slide"> <!-- Cada diapositiva del carrusel -->
+                    <img src="imagenes/imagen1.webp" alt="Mecanico revisando un camion">
+                    <div class="slide-text"> <!-- Texto superpuesto sobre la imagen -->
+                        <p>Servicio especializado</p>
+                        <h1>Mecanica para carros pesados</h1>
+                        <a href="#contacto" class="button">Solicitar servicio</a>
+                    </div>
+                </div>
+                <div class="slide"> <!-- Siguiente imagen del carrusel -->
+                    <img src="imagenes/imagen2.jpg" alt="Motor de camion en mantenimiento">
+                </div>
+                <div class="slide"> <!-- Tercera imagen del carrusel -->
+                    <img src="imagenes/imagen3.webp" alt="Revision de la parte inferior de un camion">
+                </div>
+            </div>
+
+            <div class="slider-buttons"> <!-- Controles para navegar entre imágenes -->
+                <button type="button" class="prev" aria-label="Anterior">&#10094;</button>
+                <button type="button" class="next" aria-label="Siguiente">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="intro"> <!-- Introducción breve de la marca y propuesta de valor -->
+            <p class="eyebrow">Confianza y experiencia</p>
+            <h2>Tu camion merece el mejor cuidado</h2>
+            <p>Revisamos cada detalle para que tu vehiculo trabaje con seguridad y rendimiento todos los dias.</p>
+        </section>
+
+        <section class="info-panel"> <!-- Bloque de estadísticas para mostrar credibilidad y resultados -->
+            <div class="info-card"> <!-- Tarjeta con dato clave -->
+                <span class="info-number">+12</span>
+                <p>Años de experiencia en flotas y transporte pesado.</p>
+            </div>
+            <div class="info-card"> <!-- Tarjeta con disponibilidad y atención -->
+                <span class="info-number">24/7</span>
+                <p>Soporte para emergencias y atención de prioridad.</p>
+            </div>
+            <div class="info-card"> <!-- Tarjeta con nivel de satisfacción -->
+                <span class="info-number">98%</span>
+                <p>Clientes que regresan por nuestro servicio confiable.</p>
+            </div>
+        </section>
+
+        <section class="about" id="nosotros"> <!-- Sección de presentación del taller y su diferencia -->
+            <div class="about-copy">
+                <p class="eyebrow">Nuestra diferencia</p>
+                <h2>Más que un taller: un aliado para tu operación</h2>
+                <p>En nuestro taller entendemos que cada hora detenida afecta la productividad, la seguridad y la rentabilidad de tu negocio.</p>
+
+                <div class="read-more-content"> <!-- Contenido adicional oculto hasta activar Ver más -->
+                    <p>Por eso combinamos experiencia técnica, piezas de calidad y un enfoque preventivo para cuidar cada sistema del vehículo: motor, frenos, suspensión, dirección, transmisión, electrica y sistema de enfriamiento.</p>
+                    <p>Trabajamos con empresas de transporte, flotas urbanas y vehículos de carga pesada que requieren respuestas rápidas, diagnósticos claros y soluciones duraderas en cada intervención.</p>
+                </div>
+                <button type="button" class="read-more-btn" aria-expanded="false">Ver más</button> <!-- Botón para expandir texto adicional -->
+            </div>
+
+            <div class="about-steps"> <!-- Lista de pasos del proceso de servicio -->
+                <div class="step">
+                    <strong>01</strong>
+                    <p>Diagnóstico preciso con tecnología y revisión detallada.</p>
+                </div>
+                <div class="step">
+                    <strong>02</strong>
+                    <p>Repuestos confiables y mano de obra especializada.</p>
+                </div>
+                <div class="step">
+                    <strong>03</strong>
+                    <p>Entrega con recomendaciones para prevenir fallas futuras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="servicios"> <!-- Sección dedicada a listar los servicios principales del taller -->
+            <p class="eyebrow">Lo que hacemos</p>
+            <h2>Nuestros servicios</h2>
+            <div class="lista_de_servicios"> <!-- Cuadrícula para organizar los servicios en columnas -->
+                <article class="service-card"> <!-- Tarjeta individual de un servicio -->
+                    <div class="service-icon">01</div>
+                    <h3>Diagnostico general</h3>
+                    <p>Detectamos fallas y te explicamos la reparacion que necesita tu vehiculo.</p>
+                    <div class="read-more-content"> <!-- Texto extendido oculto para explicar el servicio con más detalle -->
+                        <p>Realizamos revisiones completas de motor, sistema electrico, frenos, suspensión y transmisión para detectar fallas antes de que se conviertan en averías mayores.</p>
+                    </div>
+                    <button type="button" class="read-more-btn" aria-expanded="false">Ver más</button> <!-- Botón para desplegar más información -->
+                </article>
+                <article class="service-card"> <!-- Tarjeta del segundo servicio -->
+                    <div class="service-icon">02</div>
+                    <h3>Mantenimiento preventivo</h3>
+                    <p>Cambios, revisiones y ajustes para evitar paradas inesperadas.</p>
+                    <div class="read-more-content"> <!-- Texto complementario del mantenimiento preventivo -->
+                        <p>Planes de mantenimiento programado para reducir desgaste, aumentar la vida útil del equipo y mantener la seguridad operativa en cada recorrido.</p>
+                    </div>
+                    <button type="button" class="read-more-btn" aria-expanded="false">Ver más</button>
+                </article>
+                <article class="service-card"> <!-- Tarjeta del tercer servicio -->
+                    <div class="service-icon">03</div>
+                    <h3>Reparacion de motor</h3>
+                    <p>Trabajamos con motores y sistemas de carros pesados con precision.</p>
+                    <div class="read-more-content"> <!-- Detalle técnico del servicio de motor -->
+                        <p>Reparamos motores, sistemas de inyección, enfriamiento y combustión con procedimientos técnicos para restaurar rendimiento y evitar problemas recurrentes.</p>
+                    </div>
+                    <button type="button" class="read-more-btn" aria-expanded="false">Ver más</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="features"> <!-- Sección de ventajas competitivas del taller -->
+            <article class="feature-card"> <!-- Tarjeta de valor 1 -->
+                <h3>Atención rápida</h3>
+                <p>Respondemos con prioridad para minimiza los tiempos muertos y ayudarte a recuperar la operación sin demoras innecesarias.</p>
+            </article>
+            <article class="feature-card"> <!-- Tarjeta de valor 2 -->
+                <h3>Calidad garantizada</h3>
+                <p>Utilizamos procedimientos de revisión, herramientas adecuadas y repuestos apropiados para cada tipo de equipo pesado.</p>
+            </article>
+            <article class="feature-card"> <!-- Tarjeta de valor 3 -->
+                <h3>Soluciones a medida</h3>
+                <p>Diseñamos recomendaciones específicas según el uso, kilometraje y condiciones de trabajo de cada vehículo.</p>
+            </article>
+        </section>
+
+        <section class="location" id="ubicacion"> <!-- Sección de ubicación del taller para facilitar la visita -->
+            <div class="location-text">
+                <p class="eyebrow">Ubicación</p>
+                <h2>Estamos cerca de tu ruta</h2>
+                <p>Nuestro taller está ubicado en una zona estratégica para facilitar el acceso de flotas, transportadores y clientes con operación continua.</p>
+
+                <div class="read-more-content"> <!-- Texto extendido con detalles adicionales de la ubicación -->
+                    <p>Gracias a la ubicación central, puedes llegar con facilidad para revisiones rápidas, mantenimiento programado y atención inmediata cuando el vehículo presenta una falla mecánica importante.</p>
+                    <p>También contamos con atención personalizada para asesorarte sobre la mejor solución según la carga, el recorrido y el tipo de mantenimiento que necesita tu unidad.</p>
+                </div>
+                <button type="button" class="read-more-btn" aria-expanded="false">Ver más</button> <!-- Muestra más detalles de la ubicación -->
+            </div>
+
+            <div class="map-card"> <!-- Tarjeta de referencia geográfica del taller -->
+                <div class="map-pin">📍</div>
+                <p><strong>Av. 68 #45-30</strong></p>
+                <p>Bogotá, Colombia</p>
+                <small>Acceso fácil para transporte pesado y servicio profesional.</small>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto"> <!-- Sección final con información de contacto -->
+            <div>
+                <p class="eyebrow">Hablemos</p>
+                <h2>¿Necesitas revisar tu camion?</h2>
+                <p>Escribenos o llamanos para agendar una visita al taller y recibir una revisión completa de tu vehiculo.</p>
+            </div>
+            <div class="contact-data"> <!-- Datos de contacto del taller -->
+                <p><strong>Telefono:</strong> 300 000 0000</p>
+                <p><strong>Correo:</strong> contacto@taller.com</p>
+                <p><strong>Horario:</strong> Lunes a sabado, 8:00 a.m. - 6:00 p.m.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de página con nombre y derechos reservados -->
+        <p>Mecanica de Carros Pesados</p>
+        <p>&copy; 2026 Todos los derechos reservados</p>
+    </footer>
+
+    <script> <!-- Script para activar la funcionalidad de Ver más y el carrusel -->
+        const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+        readMoreButtons.forEach((button) => {
+            const content = button.previousElementSibling;
+
+            if (!content || !content.classList.contains('read-more-content')) {
+                return;
+            }
+
+            button.addEventListener('click', () => {
+                const isOpen = content.classList.toggle('is-open');
+                button.setAttribute('aria-expanded', String(isOpen));
+                button.textContent = isOpen ? 'Ver menos' : 'Ver más';
+            });
+        });
+
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        if (track && slides.length) {
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                currentSlide = (index + slides.length) % slides.length;
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
+            prev?.addEventListener('click', () => showSlide(currentSlide - 1));
+            next?.addEventListener('click', () => showSlide(currentSlide + 1));
+        }
+    </script>
+</body>
+</html>
